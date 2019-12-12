@@ -1,0 +1,23 @@
+[{
+        "name": "appserver",
+        "image": "{{YOUR_UPLOADE_IMAGE_PATH}",
+        "cpu": 10,
+        "memory": 512,
+        "essential": true,
+        "portMappings": [{
+            "containerPort": 9000,
+            "hostPort": 3000
+        }]
+    },
+    {
+        "name": "redis",
+        "image": "redis",
+        "cpu": 10,
+        "memory": 256,
+        "essential": true,
+        "portMappings": [{
+            "containerPort": 6379,
+            "hostPort": 6379
+        }]
+    }
+]
